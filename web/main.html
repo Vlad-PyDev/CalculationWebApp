@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор - Основное окно</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Калькулятор для программистов</h1>
+    <input type="text" id="expression" placeholder="Введите выражение, например 2+2">
+    <select id="base">
+      <option value="binary">Двоичная</option>
+      <option value="octal">Восьмеричная</option>
+      <option value="decimal" selected>Десятичная</option>
+      <option value="hexadecimal">Шестнадцатеричная</option>
+    </select>
+    <button onclick="calculate()">Вычислить</button>
+    <p id="result"></p>
+  </div>
+  <script src="/eel.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
